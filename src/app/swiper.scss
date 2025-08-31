@@ -1,0 +1,30 @@
+@import "./globals.scss";
+
+.swiper-pagination-bullet-active {
+  // background-color: $primary-color-500 !important;
+}
+
+.swiper-custom {
+  & .swiper {
+    padding: 40px 0;
+  }
+
+  & .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 94%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-custom--prev,
+  .swiper-button-custom--next {
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+}

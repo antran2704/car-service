@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin scroll {
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: overlay;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+    height: 2px;
+    overflow: overlay;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include scroll();
+}
+
+.disable__scroll {
+  overflow-y: hidden;
+}
+
+.hero__animate--shape3 {
+  --duration: 2s;
+  animation: animateShape_3 linear var(--duration) infinite forwards;
+}
+
+.hero__animate--shape2 {
+  --duration: 2s;
+  animation: animateShape_2 linear var(--duration) infinite forwards;
+}
+
+@keyframes animateShape_3 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes animateShape_2 {
+  0% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
