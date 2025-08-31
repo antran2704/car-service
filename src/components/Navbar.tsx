@@ -60,6 +60,7 @@ const Navbar = () => {
               height="100"
               title="Chau47"
               alt="Chau47"
+              loading="eager"
               className="h-12 w-[100px] object-contain object-center"
             />
           </Link>
@@ -116,6 +117,7 @@ const Navbar = () => {
                 height="100"
                 title="Chau47"
                 alt="Chau47"
+                loading="lazy"
                 className="h-16 w-[100px] object-contain object-center"
               />
             </Link>

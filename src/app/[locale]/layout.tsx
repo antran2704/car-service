@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { MantineProvider } from "@mantine/core";
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { Metadata } from "next";
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,8 +17,10 @@ import Navbar from "~/components/Navbar";
 import ScrollToTop from "~/components/ScrollToTop";
 import { Footer } from "~/components/Footer";
 import ActiveNavbar from "~/components/ActiveNavbar";
-import Head from "~/components/Head";
 import { Social } from "~/components/Social/Social";
+import { defaultMetaData } from "~/configs/Metadata";
+
+export const metadata: Metadata = defaultMetaData;
 
 export default async function LocaleLayout({
   children,
@@ -32,7 +35,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <Head />
+      {/* <Head /> */}
+      <head>
+        <ColorSchemeScript />
+      </head>
 
       <body id="body" className="bg-white">
         <NextIntlClientProvider locale={locale} messages={messages}>
