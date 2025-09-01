@@ -1,4 +1,6 @@
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
+
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 export const defaultMetaData: Metadata = {
   title: "Châu 47 Tẩy Ố, Đánh Kính Xe Ô Tô Buôn Ma Thuột",
@@ -12,7 +14,7 @@ export const defaultMetaData: Metadata = {
     images: "/images/logo.png",
     type: "website",
     locale: "vi_VN",
-    url: "https://antrandev.id.vn",
+    url: domain,
   },
   twitter: {
     card: "summary_large_image",
@@ -20,11 +22,6 @@ export const defaultMetaData: Metadata = {
     description:
       "Châu 47 chuyên dịch vụ tẩy ố, đánh bóng kính xe ô tô tại Buôn Ma Thuột. Giá hợp lý - Dịch vụ chuyên nghiệp - Khách hàng hài lòng 100%.",
     images: "/images/logo.png",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
   robots: {
     index: true,
@@ -39,7 +36,18 @@ export const defaultMetaData: Metadata = {
       "max-snippet": -1,
     },
   },
+  metadataBase: domain ? new URL(domain) : null,
   alternates: {
-    canonical: "https://antrandev.id.vn",
+    canonical: domain,
+    languages: {
+      "en-US": "/en-US",
+    },
   },
+};
+
+export const defaultViewport: Viewport = {
+  themeColor: "black",
+  colorScheme: "dark",
+  initialScale: 1,
+  width: "device-width",
 };

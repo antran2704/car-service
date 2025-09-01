@@ -19,6 +19,10 @@ const heroItems: IHeroItem[] = [
   },
   {
     title: "Châu 47 - Tây ố - Đánh bóng kính",
+    image: "/images/banner/banner_3.jpg",
+  },
+  {
+    title: "Châu 47 - Tây ố - Đánh bóng kính",
     image: "/images/banner/banner_4.png",
   },
   {
