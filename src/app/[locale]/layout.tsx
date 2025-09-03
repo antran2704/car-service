@@ -38,6 +38,10 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         <ColorSchemeScript />
+        <meta
+          name="google-site-verification"
+          content="Pr-EDGBjjT2ukF8NsH_cGtND_7kJo0bHny_YQjVuPR8"
+        />
       </head>
 
       <body id="body" className="bg-white">
