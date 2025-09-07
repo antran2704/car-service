@@ -43,6 +43,21 @@ export const defaultMetaData: Metadata = {
       "en-US": "/en-US",
     },
   },
+  keywords: [
+    "chau 47",
+    "Châu 47",
+    "Đánh bóng kính",
+    "Tẩy ố",
+    "tay o",
+    "đánh kính xe",
+    "danh kinh xe",
+    "Tây Nguyên",
+    "tay nguyen",
+    "Dak Lak",
+    "dak lak",
+    "Buôn Ma Thuót",
+    "buon ma thuot",
+  ],
 };
 
 export const defaultViewport: Viewport = {
