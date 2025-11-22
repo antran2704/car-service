@@ -8,25 +8,31 @@ import { Swiper } from "../Swiper";
 import { WrapSection } from "../Core/Section";
 import useScrollActiveNavbar from "~/app/hooks/useScrollActiveNavbar";
 
+const heroTitle = "Châu 47 - Tây ố - Đánh bóng kính - Hàn kính";
+
 const heroItems: IHeroItem[] = [
   {
-    title: "Châu 47 - Tây ố - Đánh bóng kính",
+    title: heroTitle,
+    image: "/images/banner/banner_6.jpg",
+  },
+  {
+    title: heroTitle,
     image: "/images/banner/banner_1.jpg",
   },
   {
-    title: "Châu 47 - Tây ố - Đánh bóng kính",
+    title: heroTitle,
     image: "/images/banner/banner_2.jpg",
   },
   {
-    title: "Châu 47 - Tây ố - Đánh bóng kính",
+    title: heroTitle,
     image: "/images/banner/banner_3.jpg",
   },
   {
-    title: "Châu 47 - Tây ố - Đánh bóng kính",
+    title: heroTitle,
     image: "/images/banner/banner_4.png",
   },
   {
-    title: "Châu 47 - Tây ố - Đánh bóng kính",
+    title: heroTitle,
     image: "/images/banner/banner_5.png",
   },
 ];
@@ -46,14 +52,16 @@ export function Hero() {
         ssr={true}
         autoplay={{
           delay: 4000,
-        }}>
+        }}
+      >
         {heroItems.map((item, index) => (
           <SwiperSlide key={index}>
             <div
               className="flex flex-col justify-center h-full bg-cover bg-center md:py-32 py-20"
               style={{
                 backgroundImage: `url(${item.image})`,
-              }}></div>
+              }}
+            ></div>
           </SwiperSlide>
         ))}
       </Swiper>

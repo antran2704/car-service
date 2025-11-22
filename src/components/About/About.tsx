@@ -16,9 +16,9 @@ export const About = () => {
           <p className="md:text-lg text-base">
             Tại <strong>Châu 47</strong>, chúng tôi hiểu rằng kính xe không chỉ
             ảnh hưởng đến thẩm mỹ mà còn quyết định trực tiếp đến tầm nhìn và sự
-            an toàn khi lái xe. Vì vậy, dịch vụ tẩy ố – đánh bóng kính được ra
-            đời với mục tiêu mang lại cho khách hàng trải nghiệm kính trong –
-            lái xe an toàn – xe đẹp như mới.
+            an toàn khi lái xe. Vì vậy, dịch vụ tẩy ố – đánh bóng kính - hàn
+            kính được ra đời với mục tiêu mang lại cho khách hàng trải nghiệm
+            kính trong – lái xe an toàn – xe đẹp như mới.
           </p>
           <p className="md:text-lg text-base">
             Châu 47 tại <strong>Buôn Ma Thuột</strong>, giúp khách hàng tại khu

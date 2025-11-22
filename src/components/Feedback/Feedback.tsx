@@ -38,7 +38,8 @@ export const Feedback = () => {
             1024: {
               slidesPerView: 3,
             },
-          }}>
+          }}
+        >
           {feedbackItems.map((item) => (
             <SwiperSlide key={item.id} className="h-auto">
               <div className="flex flex-col justify-between h-full bg-gray-100 p-8 rounded-md">

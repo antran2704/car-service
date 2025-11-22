@@ -28,28 +28,32 @@ export const Footer = () => {
               <li>
                 <Link
                   href={"#service"}
-                  className="text-gray-600 hover:text-primary-100">
+                  className="text-gray-600 hover:text-primary-100"
+                >
                   Dịch vụ
                 </Link>
               </li>
               <li>
                 <Link
                   href={"#why"}
-                  className="text-gray-600 hover:text-primary-100">
+                  className="text-gray-600 hover:text-primary-100"
+                >
                   Tại sao lựa chọn chúng tôi
                 </Link>
               </li>
               <li>
                 <Link
                   href={"#feedback"}
-                  className="text-gray-600 hover:text-primary-100">
+                  className="text-gray-600 hover:text-primary-100"
+                >
                   Feedback
                 </Link>
               </li>
               <li>
                 <Link
                   href={"#faq"}
-                  className="text-gray-600 hover:text-primary-100">
+                  className="text-gray-600 hover:text-primary-100"
+                >
                   FAQ
                 </Link>
               </li>
@@ -63,14 +67,16 @@ export const Footer = () => {
               <li>
                 <Link
                   href={"#about"}
-                  className="text-gray-600 hover:text-primary-100">
+                  className="text-gray-600 hover:text-primary-100"
+                >
                   Giới thiệu
                 </Link>
               </li>
               <li>
                 <Link
                   href={"#about"}
-                  className="text-gray-600 hover:text-primary-100">
+                  className="text-gray-600 hover:text-primary-100"
+                >
                   Tầm nhìn
                 </Link>
               </li>
@@ -85,7 +91,8 @@ export const Footer = () => {
                 <span className="text-sm">Số điện thoại: </span>
                 <a
                   href="tel:0932585600"
-                  className="text-gray-600 hover:text-primary-100 text-sm">
+                  className="text-gray-600 hover:text-primary-100 text-sm"
+                >
                   0932585600
                 </a>
               </li>

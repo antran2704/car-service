@@ -10,7 +10,8 @@ export const Social = () => {
         <Link
           href="https://www.facebook.com/pham.chau.32117"
           target="_blank"
-          className="text-gray-500">
+          className="text-gray-500"
+        >
           <img
             src={FACEBOOK_ICON}
             alt="facebook"
@@ -22,7 +23,8 @@ export const Social = () => {
         <Link
           href="https://zalo.me/0932585600"
           target="_blank"
-          className="text-gray-500">
+          className="text-gray-500"
+        >
           <img
             src={ZALO_ICON}
             alt="zalo"

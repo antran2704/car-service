@@ -1,6 +1,10 @@
 "use client";
 
 import { CiCircleCheck } from "react-icons/ci";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
 import { HeaderContent } from "../Core/Typography";
 import useScrollActiveNavbar from "~/app/hooks/useScrollActiveNavbar";
@@ -57,14 +61,29 @@ export const WhyChoose = () => {
         </ul>
 
         <div className="md:w-1/2 w-full">
-          <img
-            className="w-full object-contain object-center rounded-md"
-            src="/images/why_choose.webp"
-            width={100}
-            height={100}
-            alt="whyChoose"
-            title="why choose"
-            loading="lazy"
+          <ReactCompareSlider
+            itemOne={
+              <ReactCompareSliderImage
+                src="/images/before.jpg"
+                alt="why choose"
+                width={100}
+                height={100}
+                className="w-full object-contain object-center !h-[400px] rounded-md"
+                title="why choose"
+                loading="lazy"
+              />
+            }
+            itemTwo={
+              <ReactCompareSliderImage
+                src="/images/after.jpg"
+                alt="why choose"
+                width={100}
+                height={100}
+                className="w-full object-contain object-center !h-[400px] rounded-md"
+                title="why choose"
+                loading="lazy"
+              />
+            }
           />
         </div>
       </div>

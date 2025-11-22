@@ -14,7 +14,8 @@ export const WrapSection = forwardRef<HTMLElement, IProps>(
       <section
         ref={ref}
         className={clsx("md:py-10 py-5", className)}
-        {...restProp}>
+        {...restProp}
+      >
         {children}
       </section>
     );

@@ -51,7 +51,8 @@ const Navbar = () => {
       <div
         className={clsx("transition-all ease-linear duration-100 ", [
           scroll.y > 100 ? "bg-white/60 backdrop-blur-lg" : "bg-transparent",
-        ])}>
+        ])}
+      >
         <div className="container flex items-center justify-between mx-auto p-5">
           <Link href={"/"}>
             <img
@@ -74,7 +75,8 @@ const Navbar = () => {
                   "text-lg font-medium hover:text-primary-100 px-5 py-1 cursor-pointer",
                   [scroll.y > 100 ? "text-neutral-600" : "text-white"],
                   [currentSession === item.href && "!text-primary-100"],
-                )}>
+                )}
+              >
                 {item.label}
               </li>
             ))}
@@ -96,7 +98,8 @@ const Navbar = () => {
       <div
         className={clsx("fixed top-0 bottom-0 left-0 right-0 z-50", [
           !opened && "pointer-events-none",
-        ])}>
+        ])}
+      >
         <div
           onClick={toggle}
           className={clsx(
@@ -108,7 +111,8 @@ const Navbar = () => {
           className={clsx(
             "relative md:w-1/2 w-3/4 h-full bg-white p-5 transition-all ease-linear duration-100",
             [opened ? "translate-x-[0%]" : "-translate-x-full"],
-          )}>
+          )}
+        >
           <div className="flex items-center justify-between pb-10">
             <Link href={"/"}>
               <img
@@ -132,7 +136,8 @@ const Navbar = () => {
                   "w-full text-lg font-medium hover:text-primary-100 px-5 py-1 cursor-pointer",
                   [currentSession === item.href ? "text-primary-100" : ""],
                 )}
-                key={index}>
+                key={index}
+              >
                 {item.label}
               </li>
             ))}

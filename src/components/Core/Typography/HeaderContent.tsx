@@ -17,7 +17,8 @@ export const HeaderContent = (props: Props) => {
           [align === "center" && "text-center"],
           [align === "left" && "text-start"],
           [align === "right" && "text-right"],
-        )}>
+        )}
+      >
         {title}
       </h2>
       {border && (
