@@ -44,15 +44,15 @@ export function Hero() {
     <WrapSection ref={ref} className="!py-0 relative">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        className="lg:h-screen h-[60vh] !py-0 [&_.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)]:bg-white [&_.swiper-pagination-bullet]:opacity-80"
+        className="lg:h-screen h-[60vh] !py-0 [&_.swiper-pagination]:!w-fit [&_.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)]:bg-white [&_.swiper-pagination-bullet]:opacity-80"
         slidesPerView={1}
         pagination={{ clickable: true, dynamicBullets: true }}
         speed={1000}
         loop
         ssr={true}
-        autoplay={{
-          delay: 4000,
-        }}
+        // autoplay={{
+        //   delay: 4000,
+        // }}
       >
         {heroItems.map((item, index) => (
           <SwiperSlide key={index}>
