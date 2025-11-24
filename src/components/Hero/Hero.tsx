@@ -50,9 +50,9 @@ export function Hero() {
         speed={1000}
         loop
         ssr={true}
-        // autoplay={{
-        //   delay: 4000,
-        // }}
+        autoplay={{
+          delay: 4000,
+        }}
       >
         {heroItems.map((item, index) => (
           <SwiperSlide key={index}>
