@@ -8,11 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-space-grotesk)", "sans-serif"],
+      },
       colors: {
         "primary-50": "#E6EEFC",
         "primary-100": "#1A82E3",
-        "primary-200": "#0459DD",
-        accent: "#F44E77",
+        "primary-200": "#2563eb",
         "neutral-50": "#F2F6FF",
         "neutral-100": "#6A6D9E",
         stroke: "#CAD6F1",

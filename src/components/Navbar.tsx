@@ -47,13 +47,15 @@ const Navbar = () => {
   }, [opened]);
 
   return (
-    <div className={clsx("w-full fixed top-0 z-[999]")}>
+    <div className="fixed md:top-4 md:left-4 md:right-4 top-2 left-2 right-2 z-[999]">
       <div
-        className={clsx("transition-all ease-linear duration-100 ", [
-          scroll.y > 100 ? "bg-white/60 backdrop-blur-lg" : "bg-transparent",
+        className={clsx("transition-all ease-linear duration-100 rounded-lg", [
+          scroll.y > 100
+            ? "bg-white/60 backdrop-blur-lg shadow-lg"
+            : "bg-transparent",
         ])}
       >
-        <div className="container flex items-center justify-between mx-auto p-5">
+        <div className="container flex items-center justify-between h-16 mx-auto px-5">
           <Link href={"/"}>
             <img
               src={LOGO_IMAGE}
@@ -72,7 +74,7 @@ const Navbar = () => {
                 key={index}
                 onClick={() => onClickItem(item)}
                 className={clsx(
-                  "text-lg font-medium hover:text-primary-100 px-5 py-1 cursor-pointer",
+                  "text-base font-medium hover:text-primary-100 px-5 py-1 cursor-pointer",
                   [scroll.y > 100 ? "text-neutral-600" : "text-white"],
                   [currentSession === item.href && "!text-primary-100"],
                 )}

@@ -8,13 +8,13 @@ function ScrollToTop() {
   const [scroll, scrollTo] = useWindowScroll();
 
   return (
-    <Affix position={{ bottom: 50, right: 20 }}>
+    <Affix position={{ bottom: 50, right: 10 }}>
       <Transition transition="slide-up" mounted={scroll.y > 100}>
         {(transitionStyles) => (
           <Button
             style={transitionStyles}
             radius={"lg"}
-            className="w-12 h-12 bg-accent text-white p-0 hover:bg-primary transition-all ease-linear duration-100"
+            className="md:w-12 md:h-12 w-10 h-10 bg-primary-100 text-white p-0 transition-all ease-linear duration-100"
             onClick={() => scrollTo({ y: 0 })}
           >
             <IoIosArrowUp className="text-2xl" />
