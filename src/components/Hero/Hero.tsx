@@ -47,7 +47,7 @@ export function Hero() {
         className="lg:h-screen h-[60vh] !py-0 [&_.swiper-pagination]:!w-fit [&_.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)]:bg-white [&_.swiper-pagination-bullet]:opacity-80"
         slidesPerView={1}
         pagination={{ clickable: true, dynamicBullets: true }}
-        speed={1000}
+        speed={600}
         loop
         ssr={true}
         autoplay={{

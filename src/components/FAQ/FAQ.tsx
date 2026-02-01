@@ -51,7 +51,7 @@ export const FAQ = () => {
             <Accordion.Item
               key={item.value}
               value={item.value}
-              className="bg-white shadow-sm"
+              className="bg-white shadow"
             >
               <Accordion.Control className="text-lg font-bold">
                 {item.value}

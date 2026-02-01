@@ -5,7 +5,7 @@ import { LOGO_IMAGE } from "~/common/image";
 export const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
-      <div className="container md:py-12 py-8 mx-auto flex items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div className="container py-8 mx-auto flex items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link href="/">
             <img
@@ -130,13 +130,6 @@ export const Footer = () => {
               </li> */}
             </ul>
           </div>
-        </div>
-      </div>
-      <div className=" bg-gray-100">
-        <div className="container__custom mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-between">
-          <p className="text-gray-500 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} Antran
-          </p>
         </div>
       </div>
     </footer>
